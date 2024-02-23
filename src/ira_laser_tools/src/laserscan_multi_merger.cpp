@@ -34,7 +34,7 @@ LaserscanMerger::LaserscanMerger()
   inf_epsilon_ = this->declare_parameter("inf_epsilon", 1.0);
   best_effort_enabled_ = this->declare_parameter<bool>("best_effort", true);
   max_completion_time_ = this->declare_parameter<double>("max_completion_time", 0.05);
-  allow_scan_delay_ = this->declare_parameter("allow_scan_delay", false);
+  allow_scan_delay_ = this->declare_parameter("allow_scan_delay", true);
   max_delay_time_sec_ = this->declare_parameter("max_delay_scan_time", 1.0);
   max_merge_time_diff_sec_ = this->declare_parameter("max_merge_time_diff", 0.05);
 
